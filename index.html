@@ -3,75 +3,494 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Braga Auto Peças | Maceió - AL</title>
-  <meta name="description" content="Braga Auto Peças - peças e acessórios para veículos em Maceió, Alagoas.">
+
+  <title>Braga Auto Peças | Peças e Acessórios em Maceió</title>
+
+  <meta name="description"
+        content="Braga Auto Peças em Maceió. Peças, acessórios e serviços para veículos. Consulte nossa equipe pelo WhatsApp.">
+
+  <meta name="theme-color" content="#075ca8">
+
   <style>
-    * { box-sizing: border-box; }
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #222;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #1d2733;
+      line-height: 1.6;
+    }
+
     header {
-      background: #0057A8;
-      color: white;
-      padding: 35px 20px;
-      text-align: center;
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
     }
-    header h1 { margin: 0 0 8px; }
-    main {
-      max-width: 900px;
-      margin: 30px auto;
+
+    nav {
+      max-width: 1200px;
+      min-height: 72px;
+      margin: auto;
       padding: 0 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
     }
-    section {
-      background: white;
-      padding: 25px;
-      margin-bottom: 20px;
-      border-radius: 10px;
+
+    .marca {
+      color: #075ca8;
+      font-size: 22px;
+      font-weight: 800;
+      text-decoration: none;
     }
-    h2 { color: #0057A8 }
-    footer {
+
+    .menu {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    .menu a {
+      color: #26384d;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .menu a:hover {
+      color: #075ca8;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #062c59, #0876c9);
+      color: white;
       text-align: center;
+      padding: 90px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      line-height: 1.05;
+      margin-bottom: 14px;
+    }
+
+    .hero h2 {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: auto;
+      font-size: 18px;
+      opacity: .95;
+    }
+
+    .botoes {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 24px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .whatsapp {
+      background: #25d366;
+      color: white;
+    }
+
+    section {
+      padding: 70px 20px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .titulo {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .titulo h2 {
+      font-size: 34px;
+      color: #075ca8;
+      margin-bottom: 8px;
+    }
+
+    .titulo p {
+      color: #647286;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 7px 24px rgba(0,0,0,.07);
+      border-top: 5px solid #0782d6;
+    }
+
+    .card h3 {
+      color: #075ca8;
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .card li {
+      margin: 8px 0;
+    }
+
+    .empresa {
+      background: white;
+    }
+
+    .texto-empresa {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .contatos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contato-box {
+      background: white;
+      padding: 32px;
+      border-radius: 15px;
+      box-shadow: 0 7px 24px rgba(0,0,0,.07);
+    }
+
+    .contato-box h3 {
+      color: #075ca8;
+      margin-bottom: 18px;
+      font-size: 23px;
+    }
+
+    .numero {
+      display: block;
+      background: #25d366;
+      color: white;
+      padding: 14px 18px;
+      margin-top: 12px;
+      text-align: center;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .legal {
+      margin-top: 35px;
       padding: 25px;
-      color: #666;
-      font-size: 14px;
+      background: #eaf3fb;
+      border-radius: 12px;
+      color: #435468;
+    }
+
+    footer {
+      background: #061e39;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer strong {
+      display: block;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    footer p {
+      opacity: .85;
+    }
+
+    @media (max-width: 760px) {
+
+      nav {
+        flex-direction: column;
+        padding: 15px;
+      }
+
+      .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .hero {
+        padding: 65px 18px;
+      }
+
+      .cards,
+      .contatos {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 50px 18px;
+      }
+
+      .card,
+      .contato-box {
+        padding: 25px;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>BRAGA AUTO PEÇAS</h1>
-  <p>Peças e acessórios para veículos</p>
+  <nav>
+    <a class="marca" href="#inicio">BRAGA AUTO PEÇAS</a>
+
+    <ul class="menu">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#empresa">Empresa</a></li>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main>
-  <section>
-    <h2>Sobre a empresa</h2>
+
+  <section class="hero" id="inicio">
+
+    <h1>BRAGA</h1>
+
+    <h2>Auto Peças e Serviços</h2>
+
     <p>
-      A Braga Auto Peças atua no comércio de peças e acessórios
-      para veículos automotores em Maceió, Alagoas.
+      Peças, acessórios e soluções para o seu veículo em Maceió.
+      Consulte nossa equipe de forma rápida pelo WhatsApp.
     </p>
+
+    <div class="botoes">
+
+      <a class="btn whatsapp"
+         href="https://wa.me/558221219494"
+         target="_blank"
+         rel="noopener">
+         WhatsApp 82 2121-9494
+      </a>
+
+      <a class="btn whatsapp"
+         href="https://wa.me/5582991403017"
+         target="_blank"
+         rel="noopener">
+         WhatsApp 82 99140-3017
+      </a>
+
+    </div>
+
   </section>
 
-  <section>
-    <h2>Dados da empresa</h2>
-    <p><strong>Razão Social:</strong> EDMUNDO PEÇAS SERVIÇOS E ACESSÓRIOS PARA VEÍCULOS LTDA</p>
-    <p><strong>Nome Fantasia:</strong> BRAGA AUTO PEÇAS</p>
-    <p><strong>CNPJ:</strong> 06.012.511/0001-00</p>
-    <p><strong>Localização:</strong> Maceió - AL</p>
+
+  <section id="produtos">
+
+    <div class="container">
+
+      <div class="titulo">
+        <h2>Peças e Acessórios</h2>
+        <p>
+          Consulte nossa equipe para encontrar o item adequado
+          para seu veículo.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <article class="card">
+
+          <h3>Peças Automotivas</h3>
+
+          <ul>
+            <li>Peças para manutenção</li>
+            <li>Componentes mecânicos</li>
+            <li>Suspensão</li>
+            <li>Freios</li>
+            <li>Filtros</li>
+            <li>Componentes elétricos</li>
+          </ul>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>Acessórios Automotivos</h3>
+
+          <ul>
+            <li>Acessórios internos</li>
+            <li>Acessórios externos</li>
+            <li>Itens de proteção</li>
+            <li>Personalização</li>
+            <li>Utilidades automotivas</li>
+            <li>Equipamentos para veículos</li>
+          </ul>
+
+        </article>
+
+      </div>
+
+    </div>
+
   </section>
 
-  <section>
-    <h2>Contato</h2>
-    <p><strong>Telefone:</strong> (82) 2121-9494</p>
+
+  <section class="empresa" id="empresa">
+
+    <div class="container">
+
+      <div class="titulo">
+        <h2>Sobre a Braga Auto Peças</h2>
+      </div>
+
+      <div class="texto-empresa">
+
+        <p>
+          A Braga Auto Peças atua no comércio de peças,
+          acessórios e serviços para veículos automotores
+          em Maceió, Alagoas.
+        </p>
+
+        <p style="margin-top:18px;">
+          Nossa equipe busca oferecer atendimento rápido,
+          facilitando a identificação da peça ou acessório
+          necessário para cada veículo.
+        </p>
+
+      </div>
+
+    </div>
+
   </section>
+
+
+  <section id="contato">
+
+    <div class="container">
+
+      <div class="titulo">
+        <h2>Fale com a Braga</h2>
+        <p>Consulte peças, acessórios e serviços.</p>
+      </div>
+
+      <div class="contatos">
+
+        <div class="contato-box">
+
+          <h3>WhatsApp</h3>
+
+          <a class="numero"
+             href="https://wa.me/558221219494"
+             target="_blank"
+             rel="noopener">
+             82 2121-9494
+          </a>
+
+          <a class="numero"
+             href="https://wa.me/5582991403017"
+             target="_blank"
+             rel="noopener">
+             82 99140-3017
+          </a>
+
+        </div>
+
+
+        <div class="contato-box">
+
+          <h3>Localização</h3>
+
+          <p>
+            Av. Doutor Durval de Góes Monteiro, 5800
+          </p>
+
+          <p>
+            Maceió - AL
+          </p>
+
+          <p>
+            CEP 57081-285
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="legal">
+
+        <strong>Razão Social:</strong><br>
+        EDMUNDO PEÇAS SERVIÇOS E ACESSÓRIOS PARA VEÍCULOS LTDA
+
+        <br><br>
+
+        <strong>CNPJ:</strong><br>
+        06.012.511/0001-00
+
+      </div>
+
+    </div>
+
+  </section>
+
 </main>
 
+
 <footer>
-  © 2026 Braga Auto Peças. Todos os direitos reservados.
+
+  <strong>BRAGA AUTO PEÇAS</strong>
+
+  <p>
+    Edmundo Peças, Serviços e Acessórios para Veículos Ltda.
+  </p>
+
+  <p style="margin-top:10px;">
+    © 2026 Braga Auto Peças. Todos os direitos reservados.
+  </p>
+
 </footer>
 
 </body>
