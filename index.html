@@ -1,23 +1,3 @@
-Analisando o código do arquivo `index.html` da Braga Auto Peças, o layout base já está bem estruturado com **Flexbox**, **CSS Grid** e a meta tag `viewport` configurada. No entanto, para garantir que o renderização fique **100% perfeita tanto em PC quanto em Mobile**, existem pequenos pontos de quebra e ajustes de responsividade que precisam ser corrigidos.
-
----
-
-### Principais pontos de correção no seu código:
-
-1. **Imagem da Logo no Header/Hero (`.hero-logo`)**:
-No seu CSS atual, a classe `.hero-logo` está com `max-width: none;`. Em telas de PC grandes (Full HD ou 4K), isso fará com que a logo estique desproporcionalmente, ocupando a tela inteira. Adicionar um `max-width` razoável evita a distorção no computador.
-2. **Padding da Seção Hero**:
-No desktop a seção hero está com `padding: 0 0 20px 0`, enquanto no mobile troca abruptamente para `padding: 65px 18px`. Padronizar o espaçamento evita sobram ou cortes visuais em tablets e telas intermediárias.
-3. **Menu de Navegação no Mobile**:
-No mobile, os links da navegação ficam centralizados em linha. Para evitar que os links fiquem colados na marca em telas menores, ajustamos o alinhamento do `<nav>`.
-
----
-
-### Código Completo Atualizado
-
-Substitua todo o conteúdo do seu arquivo [`index.html`](https://github.com/VstarTelecom/edmundoautopecas-site/blob/main/index.html) pelo código abaixo:
-
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
