@@ -44,9 +44,10 @@
     }
 
     .marca {
-      color: #075ca8;
-      font-size: 22px;
-      font-weight: 800;
+      color: #647286;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
       text-decoration: none;
     }
 
@@ -85,7 +86,7 @@
       background: #ffffff;
       display: block;
       width: 100%;
-      padding: 20px 20px 0 20px;
+      padding: 8px 20px 0 20px;
     }
 
     .hero-logo {
@@ -100,7 +101,7 @@
       width: 100%;
       display: flex;
       background: linear-gradient(90deg, #0f1f6b 0%, #0f1f6b 38%, #1074c4 38%, #1074c4 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 4% 50%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 8% 50%);
       min-height: 90px;
     }
 
@@ -147,19 +148,47 @@
     }
 
     @media (max-width: 640px) {
+      .logo-card {
+        padding: 10px 14px 0 14px;
+      }
+
+      .hero-logo {
+        max-width: 380px;
+      }
+
       .faixa-contato {
         clip-path: none;
         flex-direction: column;
+        min-height: unset;
       }
       .faixa-contato-marca {
-        padding: 10px 15px;
-        font-size: 18px;
+        flex: none;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 12px 15px;
+        font-size: 16px;
       }
       .faixa-contato-numeros {
-        padding: 12px 15px;
+        padding: 14px 15px;
+        align-items: center;
+        gap: 10px;
       }
       .whats-link {
-        font-size: 19px;
+        font-size: 18px;
+        justify-content: center;
+      }
+      .whats-icone {
+        width: 26px;
+        height: 26px;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .whats-link {
+        font-size: 16px;
+        gap: 8px;
       }
     }
 
