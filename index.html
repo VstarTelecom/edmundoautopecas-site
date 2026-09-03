@@ -1,3 +1,6 @@
+Entendi — quer manter esse mesmo estilo (faixa escura + azul com os números), só trocando o ícone de telefone (☎) pelo ícone oficial do WhatsApp. Vou colocar um SVG do ícone do WhatsApp de verdade, em vez do emoji de telefone:Agora atualizo os dois links pra usar o ícone SVG do WhatsApp em vez do emoji de telefone:Pronto! Trocado o ícone de telefone (📞) pelo **ícone real do WhatsApp** (o balãozinho verde com o telefone estilizado), mantendo o mesmo estilo de faixa escura + azul com diagonal, igual à logo original que você mandou.
+
+Aqui está o código completo atualizado:```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -144,7 +147,12 @@
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-      font-size: 16px;
+    }
+
+    .whats-icone svg {
+      width: 16px;
+      height: 16px;
+      fill: #ffffff;
     }
 
     @media (max-width: 640px) {
@@ -181,7 +189,10 @@
       .whats-icone {
         width: 26px;
         height: 26px;
-        font-size: 14px;
+      }
+      .whats-icone svg {
+        width: 15px;
+        height: 15px;
       }
     }
 
@@ -367,10 +378,10 @@
           <div class="faixa-contato-marca">AUTO PEÇAS E SERVIÇOS</div>
           <div class="faixa-contato-numeros">
             <a class="whats-link" href="https://wa.me/558221219494" target="_blank" rel="noopener">
-              <span class="whats-icone">📞</span> 82 2121-9494
+              <span class="whats-icone"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.12-2.9-6.99A9.82 9.82 0 0 0 12.04 2m0 1.67a8.2 8.2 0 0 1 5.82 2.41 8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.24-8.23m-4.53 4.7c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.05.14-1.16-.06-.1-.22-.16-.46-.28-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19-.71-.63-1.19-1.42-1.33-1.66-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.32-.75-1.8-.2-.47-.4-.4-.54-.41h-.02z"/></svg></span> 82 2121-9494
             </a>
             <a class="whats-link" href="https://wa.me/5582991403017" target="_blank" rel="noopener">
-              <span class="whats-icone">📞</span> 82 99140-3017
+              <span class="whats-icone"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.12-2.9-6.99A9.82 9.82 0 0 0 12.04 2m0 1.67a8.2 8.2 0 0 1 5.82 2.41 8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.37c0-4.54 3.7-8.23 8.24-8.23m-4.53 4.7c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.05.14-1.16-.06-.1-.22-.16-.46-.28-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19-.71-.63-1.19-1.42-1.33-1.66-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.32-.75-1.8-.2-.47-.4-.4-.54-.41h-.02z"/></svg></span> 82 99140-3017
             </a>
           </div>
         </div>
@@ -459,3 +470,6 @@
 
 </body>
 </html>
+```
+
+Cola no `index.html` e me manda um print quando publicar!
