@@ -24,7 +24,6 @@
       line-height: 1.6;
     }
 
-    /* Cabeçalho Responsivo */
     header {
       background: #ffffff;
       position: sticky;
@@ -68,12 +67,11 @@
       color: #075ca8;
     }
 
-    /* Hero / Logotipo */
     .hero {
       background: linear-gradient(135deg, #062c59, #0876c9);
       color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -81,26 +79,90 @@
 
     .faixa-logo {
       width: 100%;
-      max-width: 1200px;
     }
 
     .logo-card {
       background: #ffffff;
-      display: inline-block;
-      padding: 18px 30px;
-      border-radius: 14px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      display: block;
+      width: 100%;
+      padding: 20px 20px 0 20px;
     }
 
     .hero-logo {
       display: block;
       width: 100%;
-      max-width: 700px; /* Limita o tamanho em telas de PC */
+      max-width: 650px;
       height: auto;
       margin: 0 auto;
     }
 
-    /* Seções Genéricas */
+    .faixa-contato {
+      width: 100%;
+      display: flex;
+      background: linear-gradient(90deg, #0f1f6b 0%, #0f1f6b 38%, #1074c4 38%, #1074c4 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 4% 50%);
+      min-height: 90px;
+    }
+
+    .faixa-contato-marca {
+      flex: 0 0 38%;
+      display: flex;
+      align-items: center;
+      padding-left: 6%;
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .faixa-contato-numeros {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+      padding: 12px 30px;
+    }
+
+    .whats-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    .whats-icone {
+      width: 28px;
+      height: 28px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 16px;
+    }
+
+    @media (max-width: 640px) {
+      .faixa-contato {
+        clip-path: none;
+        flex-direction: column;
+      }
+      .faixa-contato-marca {
+        padding: 10px 15px;
+        font-size: 18px;
+      }
+      .faixa-contato-numeros {
+        padding: 12px 15px;
+      }
+      .whats-link {
+        font-size: 19px;
+      }
+    }
+
     section {
       width: 100%;
       padding: 50px 20px;
@@ -127,7 +189,6 @@
       color: #647286;
     }
 
-    /* Grid do PC (2 colunas) */
     .cards,
     .contatos {
       display: grid;
@@ -216,7 +277,6 @@
       opacity: 0.85;
     }
 
-    /* Adaptabilidade Mobile (< 768px) */
     @media (max-width: 768px) {
       nav {
         flex-direction: column;
@@ -231,12 +291,12 @@
       }
 
       .hero {
-        padding: 20px 15px;
+        padding: 0;
       }
 
       .cards,
       .contatos {
-        grid-template-columns: 1fr; /* Transforma as 2 colunas em 1 no celular */
+        grid-template-columns: 1fr;
       }
 
       section {
@@ -272,7 +332,18 @@
     <section class="hero" id="inicio">
       <div class="faixa-logo">
         <div class="logo-card">
-          <img src="logo_edmundo_card.png" alt="Logo Edmundo Auto Peças" class="hero-logo">
+          <img src="logo_edmundo_wordmark.png" alt="Logo Edmundo Auto Peças" class="hero-logo">
+        </div>
+        <div class="faixa-contato">
+          <div class="faixa-contato-marca">AUTO PEÇAS E SERVIÇOS</div>
+          <div class="faixa-contato-numeros">
+            <a class="whats-link" href="https://wa.me/558221219494" target="_blank" rel="noopener">
+              <span class="whats-icone">📞</span> 82 2121-9494
+            </a>
+            <a class="whats-link" href="https://wa.me/5582991403017" target="_blank" rel="noopener">
+              <span class="whats-icone">📞</span> 82 99140-3017
+            </a>
+          </div>
         </div>
       </div>
     </section>
