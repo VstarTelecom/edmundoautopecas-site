@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Edmundo Auto Peças | Peças e Acessórios em Maceió</title>
@@ -15,7 +14,6 @@
   <meta name="theme-color" content="#075ca8">
 
   <style>
-
     * {
       margin: 0;
       padding: 0;
@@ -34,7 +32,6 @@
       overflow-x: hidden;
     }
 
-
     /* HEADER */
 
     header {
@@ -50,7 +47,6 @@
       width: 100%;
       max-width: 1100px;
       min-height: 64px;
-
       margin: 0 auto;
       padding: 0 20px;
 
@@ -86,27 +82,28 @@
       color: #075ca8;
     }
 
-
-    /* LOGO PRINCIPAL */
+    /* HOME / LOGO */
 
     .hero {
       width: 100%;
       background: #ffffff;
       text-align: center;
+      padding: 0;
+    }
 
-      padding: 0 20px 8px;
+    .logo-wrap {
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+      overflow: hidden;
     }
 
     .hero-logo {
       display: block;
-
       width: 100%;
-      max-width: 850px;
       height: auto;
-
-      margin: 0 auto;
+      margin: -115px auto -85px;
     }
-
 
     /* SEÇÕES */
 
@@ -137,33 +134,22 @@
       font-size: 15px;
     }
 
-
     /* PRODUTOS */
 
     .cards {
       display: grid;
-
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
-
       max-width: 900px;
       margin: 0 auto;
     }
 
     .card {
       background: #ffffff;
-
       padding: 26px;
-
       border-radius: 14px;
-
-      border-top:
-        4px solid #0782d6;
-
-      box-shadow:
-        0 7px 22px rgba(0,0,0,.07);
+      border-top: 4px solid #0782d6;
+      box-shadow: 0 7px 22px rgba(0,0,0,.07);
     }
 
     .card h3 {
@@ -180,7 +166,6 @@
       margin: 7px 0;
     }
 
-
     /* EMPRESA */
 
     .empresa {
@@ -190,11 +175,8 @@
     .texto-empresa {
       max-width: 800px;
       margin: 0 auto;
-
       text-align: center;
-
       color: #4f5d6d;
-
       font-size: 17px;
     }
 
@@ -202,30 +184,21 @@
       margin-top: 16px;
     }
 
-
     /* CONTATO */
 
     .contatos {
       display: grid;
-
-      grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
-
       max-width: 900px;
       margin: 0 auto;
     }
 
     .contato-box {
       background: #ffffff;
-
       padding: 26px;
-
       border-radius: 14px;
-
-      box-shadow:
-        0 7px 22px rgba(0,0,0,.07);
+      box-shadow: 0 7px 22px rgba(0,0,0,.07);
     }
 
     .contato-box h3 {
@@ -234,30 +207,23 @@
       margin-bottom: 15px;
     }
 
-
     /* WHATSAPP */
 
     .numero {
       display: flex;
-
       align-items: center;
       justify-content: center;
-
       width: 100%;
       min-height: 50px;
-
       margin-top: 12px;
       padding: 13px 18px;
 
       background: #25d366;
-
       color: #ffffff;
 
       text-decoration: none;
       font-weight: 700;
-
       border-radius: 9px;
-
       transition: .2s;
     }
 
@@ -266,43 +232,30 @@
       transform: translateY(-2px);
     }
 
-
     /* DADOS LEGAIS */
 
     .legal {
       max-width: 900px;
-
       margin: 26px auto 0;
-
       padding: 22px;
-
       background: #eaf3fb;
-
       border-radius: 12px;
-
       color: #435468;
-
       font-size: 14px;
     }
-
 
     /* FOOTER */
 
     footer {
       background: #061e39;
-
       color: #ffffff;
-
       text-align: center;
-
       padding: 34px 20px;
     }
 
     footer strong {
       display: block;
-
       font-size: 20px;
-
       margin-bottom: 7px;
     }
 
@@ -315,16 +268,13 @@
       margin-top: 7px;
     }
 
-
     /* MOBILE */
 
     @media (max-width: 768px) {
 
       nav {
         flex-direction: column;
-
         padding: 12px 16px;
-
         gap: 8px;
       }
 
@@ -342,25 +292,21 @@
         font-size: 14px;
       }
 
-
-      /* LOGO MOBILE */
-
       .hero {
-        padding:
-          0 6px 6px;
+        padding: 0;
+      }
+
+      .logo-wrap {
+        max-width: 100%;
       }
 
       .hero-logo {
         width: 100%;
-        max-width: 100%;
+        margin: -45px auto -30px;
       }
 
-
-      /* SEÇÕES MOBILE */
-
       section {
-        padding:
-          32px 16px;
+        padding: 32px 16px;
       }
 
       .titulo {
@@ -370,9 +316,6 @@
       .titulo h2 {
         font-size: 24px;
       }
-
-
-      /* CARDS MOBILE */
 
       .cards,
       .contatos {
@@ -390,91 +333,54 @@
         font-size: 20px;
       }
 
-
-      /* WHATSAPP MOBILE */
-
       .numero {
         min-height: 52px;
         font-size: 16px;
       }
 
-
-      /* DADOS LEGAIS MOBILE */
-
       .legal {
         padding: 18px;
       }
-
     }
-
   </style>
 </head>
 
-
 <body>
 
-
 <header>
-
   <nav>
 
-    <a
-      class="marca"
-      href="#inicio">
+    <a class="marca" href="#inicio">
       EDMUNDO AUTO PEÇAS
     </a>
 
-
     <ul class="menu">
-
-      <li>
-        <a href="#inicio">
-          Início
-        </a>
-      </li>
-
-      <li>
-        <a href="#empresa">
-          Empresa
-        </a>
-      </li>
-
-      <li>
-        <a href="#produtos">
-          Produtos
-        </a>
-      </li>
-
-      <li>
-        <a href="#contato">
-          Contato
-        </a>
-      </li>
-
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#empresa">Empresa</a></li>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#contato">Contato</a></li>
     </ul>
 
   </nav>
-
 </header>
-
 
 <main>
 
+  <!-- HOME / LOGO NOVA -->
 
-  <!-- LOGO NOVA -->
+  <section class="hero" id="inicio">
 
-  <section
-    class="hero"
-    id="inicio">
+    <div class="logo-wrap">
 
-    <img
-      src="edmundo_logo.png"
-      alt="Edmundo Auto Peças e Serviços"
-      class="hero-logo"
-    >
+      <img
+        src="edmundo_logo.png"
+        alt="Edmundo Auto Peças e Serviços"
+        class="hero-logo"
+      >
+
+    </div>
 
   </section>
-
 
   <!-- PRODUTOS -->
 
@@ -484,9 +390,7 @@
 
       <div class="titulo">
 
-        <h2>
-          Peças e Acessórios
-        </h2>
+        <h2>Peças e Acessórios</h2>
 
         <p>
           Consulte nossa equipe para encontrar
@@ -495,83 +399,37 @@
 
       </div>
 
-
       <div class="cards">
 
-
         <article class="card">
 
-          <h3>
-            Peças Automotivas
-          </h3>
+          <h3>Peças Automotivas</h3>
 
           <ul>
-
-            <li>
-              Peças para manutenção
-            </li>
-
-            <li>
-              Componentes mecânicos
-            </li>
-
-            <li>
-              Suspensão
-            </li>
-
-            <li>
-              Freios
-            </li>
-
-            <li>
-              Filtros
-            </li>
-
-            <li>
-              Componentes elétricos
-            </li>
-
+            <li>Peças para manutenção</li>
+            <li>Componentes mecânicos</li>
+            <li>Suspensão</li>
+            <li>Freios</li>
+            <li>Filtros</li>
+            <li>Componentes elétricos</li>
           </ul>
 
         </article>
 
-
         <article class="card">
 
-          <h3>
-            Acessórios Automotivos
-          </h3>
+          <h3>Acessórios Automotivos</h3>
 
           <ul>
-
-            <li>
-              Acessórios internos
-            </li>
-
-            <li>
-              Acessórios externos
-            </li>
-
-            <li>
-              Itens de proteção
-            </li>
-
-            <li>
-              Personalização
-            </li>
-
-            <li>
-              Utilidades automotivas
-            </li>
-
-            <li>
-              Equipamentos para veículos
-            </li>
-
+            <li>Acessórios internos</li>
+            <li>Acessórios externos</li>
+            <li>Itens de proteção</li>
+            <li>Personalização</li>
+            <li>Utilidades automotivas</li>
+            <li>Equipamentos para veículos</li>
           </ul>
 
         </article>
-
 
       </div>
 
@@ -579,12 +437,9 @@
 
   </section>
 
-
   <!-- EMPRESA -->
 
-  <section
-    class="empresa"
-    id="empresa">
+  <section class="empresa" id="empresa">
 
     <div class="container">
 
@@ -595,7 +450,6 @@
         </h2>
 
       </div>
-
 
       <div class="texto-empresa">
 
@@ -618,7 +472,6 @@
 
   </section>
 
-
   <!-- CONTATO -->
 
   <section id="contato">
@@ -632,102 +485,77 @@
         </h2>
 
         <p>
-          Consulte peças,
-          acessórios e serviços.
+          Consulte peças, acessórios e serviços.
         </p>
 
       </div>
 
-
       <div class="contatos">
-
 
         <div class="contato-box">
 
-          <h3>
-            WhatsApp
-          </h3>
-
+          <h3>WhatsApp</h3>
 
           <a
             class="numero"
             href="https://wa.me/558221219494"
             target="_blank"
-            rel="noopener">
-
+            rel="noopener"
+          >
             WhatsApp (82) 2121-9494
-
           </a>
-
 
           <a
             class="numero"
             href="https://wa.me/5582991403017"
             target="_blank"
-            rel="noopener">
-
+            rel="noopener"
+          >
             WhatsApp (82) 99140-3017
-
           </a>
 
         </div>
 
-
         <div class="contato-box">
 
-          <h3>
-            Localização
-          </h3>
+          <h3>Localização</h3>
 
           <p>
             Av. Doutor Durval de Góes Monteiro, 5800
           </p>
 
-          <p>
-            Maceió - AL
-          </p>
+          <p>Maceió - AL</p>
 
-          <p>
-            CEP 57081-285
-          </p>
+          <p>CEP 57081-285</p>
 
         </div>
 
-
       </div>
-
 
       <div class="legal">
 
-        <strong>
-          Razão Social:
-        </strong>
+        <strong>Razão Social:</strong>
 
         <br>
 
-        EDMUNDO PEÇAS SERVIÇOS
-        E ACESSÓRIOS PARA VEÍCULOS LTDA
+        EDMUNDO PEÇAS SERVIÇOS E ACESSÓRIOS
+        PARA VEÍCULOS LTDA
 
         <br><br>
 
-        <strong>
-          CNPJ:
-        </strong>
+        <strong>CNPJ:</strong>
 
         <br>
 
-        06.012.511/0002-90
+        06.012.511/0001-00
 
       </div>
-
 
     </div>
 
   </section>
 
-
 </main>
-
 
 <footer>
 
@@ -747,7 +575,6 @@
   </p>
 
 </footer>
-
 
 </body>
 </html>
